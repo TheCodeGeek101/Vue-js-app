@@ -4,17 +4,30 @@ import HelloWorld from './components/HelloWorld.vue'
 import Greet from './components/Greet.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import Article from './components/Article.vue'
+import TabA from './components/TabA.vue'
+import TabB from './components/TabB.vue'
+import TabC from './components/TabC.vue'
+import Portal from './components/portal.vue'
+import PostList from './components/PostList.vue'
+import CreatePosts from './components/CreatePosts.vue'
 
 export default {
   name: "App",
   components: {
     Greet,
     Article,
+    TabA,
+    TabB,
+    Portal,
+    PostList,
+    TabC,
+    CreatePosts,
   },
 data(){
   return {
     name: "Thembinkosi",
     channel: "My channel",
+    activeTab: "TabA",
   }
 }
 }
@@ -23,8 +36,9 @@ data(){
 
 <template>
 
+<CreatePosts />
+<PostList />
 
-  <Article id="my-article" :likes=50 :isPublished="true" />
 </template>
 
 <style>
