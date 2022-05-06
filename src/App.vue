@@ -22,6 +22,7 @@ export default {
     PostList,
     TabC,
     CreatePosts,
+    Parent,
   },
 data(){
   return {
@@ -38,6 +39,7 @@ data(){
 
 <CreatePosts />
 <PostList />
+<Parent />
 
 </template>
 
